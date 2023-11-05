@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(MonumentExtended-Regular.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(193,164,172);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 28%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 68%;
+    background-color: rgb(0, 255, 149);
+    background-image: url("https://images.unsplash.com/photo-1513374933342-24bf646c8f5f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: top;
+}
+#part3{
+    height: 100%;
+    width: 8%;
+    /* background-color: rgb(0, 13, 255); */
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(53, 37, 42, 0.554);
+}
+#text-div{
+    /* height: 200px; */
+    position: absolute;
+    /* width: 500px; */
+    /* background-color: red; */
+    left: 8%;
+    top: 55%;
+    transform: translate(0,-50%);
+}
+#text-div>h1{
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: "gilroy";
+    text-transform: uppercase;
+    color: white;
+    /* text-shadow: 1px 1px 5px black; */
+    line-height: 1.1em;
+}
+#small-img{
+    position: absolute;
+    height: 375px;
+    width: 300px;
+    top: 50%;
+    right: -7%;
+    /* background-color: black; */
+    background-image: url('https://images.unsplash.com/photo-1554218094-d1f99bcaa58c?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    border-radius: 15px;
+    background-position: top;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -52%;
+    transform-origin: 0% 0%;
+    top: -2%;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+#vertical-text h1{
+    font-size: 41px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: transparent;
+    font-family: 'gilroy';
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #fff;
+    /* text-shadow: 2px 2px 10px black; */
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 8%;
+    top: 5%;
+    /* height: 75px; */
+    width: 450px;
+    /* background-color: red; */
+
+}
+#nav img{
+    height: 80px;
+}
+#nav h4{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'gilroy';
+    color: #fff;
+
+}
